@@ -385,7 +385,6 @@ function listLivingOrgClass() {
     item.appendChild(document.createTextNode(element));
     list.appendChild(item);
   });
-  console.log(typeof list);
   return list.outerHTML;
 }
 
@@ -409,7 +408,25 @@ function listLivingOrgClass() {
  * @return {String}
  *
  */
+function favoritePlanet(currentPlanet){
+  var randomNumber = Math.floor(Math.random()*planets.length);
+  console.log(Math.random(), Math.random()*planets.length);
+  var index = planets.indexOf(currentPlanet);
+  if(index > -1) {
 
+    if(index=== 0 && index === randomNumber) {
+      randomNumber -= 1;
+    }
+    else if(index < 1 && index === randomNumber) {
+      randomNumber += 1;
+    }
+    console.log(randomNumber);
+    return "I'm from " + currentPlanet + ", but I wish I could go to " + planets[randomNumber];
+  }
+  else {
+    return currentPlanet + " is not a planet!";
+  }
+}
 
 /* Step 27
  *
