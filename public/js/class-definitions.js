@@ -378,6 +378,16 @@ function browseURL(browserName) {
  * @return {String}
  *
  */
+function listLivingOrgClass() {
+  var list = document.createElement ('ul');
+  livingOrganismClassification.forEach(function(element, index, array) {
+    var item = document.createElement('li');
+    item.appendChild(document.createTextNode(element));
+    list.appendChild(item);
+  });
+  console.log(typeof list);
+  return list.outerHTML;
+}
 
 
 /* Step 26
