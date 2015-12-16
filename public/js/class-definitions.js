@@ -415,12 +415,11 @@ function favoritePlanet(currentPlanet){
   if(index > -1) {
 
     if(index=== 0 && index === randomNumber) {
-      randomNumber -= 1;
-    }
-    else if(index < 1 && index === randomNumber) {
       randomNumber += 1;
     }
-    console.log(randomNumber);
+    else if(index > 1 && index === randomNumber) {
+      randomNumber -= 1;
+    }
     return "I'm from " + currentPlanet + ", but I wish I could go to " + planets[randomNumber];
   }
   else {
