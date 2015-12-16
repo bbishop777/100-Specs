@@ -195,7 +195,7 @@ var linuxFlavors =["Gentoo", "Fedora", "Debian", "Slackware", "Red Hat", "Bieber
  * "cytosine"
  *
  */
-
+var DNA = ["nucleatides", "guanine", "adenine", "thymine", "cytosine"];
 
 /* Step 16
  *
