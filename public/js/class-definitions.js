@@ -410,7 +410,6 @@ function listLivingOrgClass() {
  */
 function favoritePlanet(currentPlanet){
   var randomNumber = Math.floor(Math.random()*planets.length);
-  console.log(Math.random(), Math.random()*planets.length);
   var index = planets.indexOf(currentPlanet);
   if(index > -1) {
 
@@ -449,7 +448,21 @@ function favoritePlanet(currentPlanet){
  *   earnMoney
  *
  */
+ function Person(name, money, age, gender){
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+ }
 
+ Person.prototype.spendMoney = function(x) {
+  console.log(x);
+  this.money -= x;
+ };
+
+ Person.prototype.earnMoney = function (y) {
+  this.money += y;
+ };
 
 /* Step 28
  *
