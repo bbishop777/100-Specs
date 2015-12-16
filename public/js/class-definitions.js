@@ -525,7 +525,13 @@ function canTalkAbout(club){
  *   write
  *
  */
+function Pen(color) {
+  this.color = color;
+}
 
+Pen.prototype.write = function(string) {
+  return this.color + ": " + string;
+};
 
 /* Step 31
  *
