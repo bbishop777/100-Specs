@@ -93,8 +93,12 @@ var gender = {
  *   gender  => gender.female
  *
  */
-
-
+var princess_leia = {
+  name: "Leia Organa",
+  money: 890,
+  age: 20,
+  gender: gender.female
+};
 /* Step 11
  *
  * Define a literal object named "domains"
