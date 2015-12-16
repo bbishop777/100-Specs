@@ -359,7 +359,15 @@ function drink(type) {
  * @return {String if true else return false}
  *
  */
+function browseURL(browserName) {
+  if(browserName in browsers) {
+    return browsers[browserName];
+  }
+  else {
+    return false;
+  }
 
+}
 
 /* Step 25
  *
